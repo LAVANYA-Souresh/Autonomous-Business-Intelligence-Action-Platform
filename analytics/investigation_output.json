@@ -1,0 +1,125 @@
+{
+    "anomaly": {
+        "month": "2025-05",
+        "revenue": 115381593.0
+    },
+    "investigation_summary": {
+        "type": "evidence_based",
+        "causal_claims": false,
+        "note": "The investigation identifies correlations and changes in business metrics. It does not establish causal relationships."
+    },
+    "product_evidence": [
+        {
+            "product": "Book Air",
+            "revenue_change_percentage": 5.198019801980198,
+            "return_change": 7,
+            "support_ticket_change": 4,
+            "complaint_change": 5,
+            "refund_change": 1
+        },
+        {
+            "product": "Book Pro",
+            "revenue_change_percentage": 12.602739726027398,
+            "return_change": -4,
+            "support_ticket_change": 1,
+            "complaint_change": 2,
+            "refund_change": -4
+        },
+        {
+            "product": "Buds",
+            "revenue_change_percentage": 5.3984575835475574,
+            "return_change": 6,
+            "support_ticket_change": 1,
+            "complaint_change": -5,
+            "refund_change": 4
+        },
+        {
+            "product": "Keyboard",
+            "revenue_change_percentage": 22.153846153846153,
+            "return_change": 2,
+            "support_ticket_change": -4,
+            "complaint_change": 0,
+            "refund_change": -2
+        },
+        {
+            "product": "Monitor",
+            "revenue_change_percentage": 28.493150684931507,
+            "return_change": 0,
+            "support_ticket_change": -11,
+            "complaint_change": -3,
+            "refund_change": 1
+        },
+        {
+            "product": "Mouse",
+            "revenue_change_percentage": 31.1614730878187,
+            "return_change": -2,
+            "support_ticket_change": 4,
+            "complaint_change": -2,
+            "refund_change": 1
+        },
+        {
+            "product": "Phone X1",
+            "revenue_change_percentage": 32.95774647887324,
+            "return_change": -2,
+            "support_ticket_change": -1,
+            "complaint_change": -3,
+            "refund_change": 3
+        },
+        {
+            "product": "Phone X2",
+            "revenue_change_percentage": 23.017902813299234,
+            "return_change": 1,
+            "support_ticket_change": -6,
+            "complaint_change": 0,
+            "refund_change": 0
+        },
+        {
+            "product": "Tablet",
+            "revenue_change_percentage": 15.17412935323383,
+            "return_change": 1,
+            "support_ticket_change": 6,
+            "complaint_change": 0,
+            "refund_change": 2
+        },
+        {
+            "product": "Watch",
+            "revenue_change_percentage": 18.181818181818183,
+            "return_change": 8,
+            "support_ticket_change": -6,
+            "complaint_change": -4,
+            "refund_change": -2
+        }
+    ],
+    "regional_evidence": [
+        {
+            "region": "South India",
+            "revenue_change_percentage": -1.9664565841430899
+        },
+        {
+            "region": "West",
+            "revenue_change_percentage": 5.992547056204011
+        },
+        {
+            "region": "North India",
+            "revenue_change_percentage": 6.38266286658159
+        },
+        {
+            "region": "East India",
+            "revenue_change_percentage": 27.835447593658742
+        },
+        {
+            "region": "Puducherry",
+            "revenue_change_percentage": 48.25995575782691
+        }
+    ],
+    "return_rate": {
+        "current": 10.128055878928988,
+        "previous": 9.45945945945946,
+        "change_percentage_points": 0.6685964194695284
+    },
+    "support_tickets": {
+        "current": 146,
+        "previous": 158,
+        "change": -12
+    }
+}
