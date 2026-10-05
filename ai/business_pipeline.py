@@ -41,7 +41,7 @@ class BusinessPipeline:
             sql_service=self.sql_service
         )
        
-        self.reasoning_engine = BusinessReasoningEngine()
+        self.reasoning_engine = BusinessReasoningEngine(llm_client=self.llm_client)
 
         self.orchestrator = BusinessOrchestrator(
             analysis_planner=self.analysis_planner,
@@ -61,9 +61,8 @@ class BusinessPipeline:
         result = orchestration_result["result"]
 
         if workflow == "simple_factual":
-            answer = self._build_simple_factual_answer(
+            answer = self._build_deterministic_answer(
                question,
-               analysis_plan,
                result
         )
 
@@ -590,8 +589,11 @@ class BusinessPipeline:
 
             field = next(iter(first_row))
             value = first_row[field]
-
-            return f"The result is {value}."
+            try:
+                formatted_value = f"{float(value):,.2f}"
+                return f"The result is ₹{formatted_value}."
+            except (TypeError, ValueError):
+                return f"The result is {value}."
 
         parts = []
 
